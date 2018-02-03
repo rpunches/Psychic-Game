@@ -39,7 +39,7 @@ document.onkeyup = function (event) {
         if (aryAlpha.indexOf(userGuess) >= 0) {
             // If the userGuess is the same as the computerGuess, the user wins that round and the game is restarted.    
             if (userGuess === computerGuess) {
-                alert("You got it!");
+                alert("You got it! The letter was " + computerGuess + "!");
                 numWins = numWins + 1;
                 document.getElementById("wins").innerHTML = numWins;
                 startGame();
@@ -56,7 +56,7 @@ document.onkeyup = function (event) {
         }
         // Once the Guesses Left countdown reaches "0", the user has lost that round and the game is restarted.
     } else {
-        alert("You lost!");
+        alert("You lost! The letter was " + computerGuess + "!");
         numLosses = numLosses + 1;
         document.getElementById("losses").innerHTML = numLosses;
         startGame();

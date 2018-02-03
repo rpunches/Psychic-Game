@@ -1,4 +1,29 @@
 .jumbo{
-    background-color: purple;
+    background-color:#5f294b;
     color: white;
 }
+
+body{
+    font-family: 'Cinzel', serif;
+    background-color: darkgrey;
+}
+
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #5f294b;   
+}
+
+h1{
+    font-family: 'Cinzel Decorative', cursive;  
+}
+
+h4{
+   font-weight: 700;
+}
+

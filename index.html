@@ -8,28 +8,37 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cinzel:400,700,900" rel="stylesheet">
    
 </head>
 
 <body>
     <div class="jumbo jumbotron">
-        <h1 style="font-weight:bold" ;>The Psychic Game!</h1>
-        <h3>Can you guess which letter I'm thinking of?</h3>
+        <h1 class="display-1"><i class="far fa-star"></i> THe PsYchIC gAmE <i class="far fa-star"></i></h1>
+        <hr>
+        
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <p>Wins: <span id= "wins"></span></p> 
-                <p>Losses: <span id= "losses"></span></p>  
-                <p>Guesses Left: <span id= "guessesLeft"></span></p>
+             <div class="col-4">
+                <img src="assets/images/crystal ball.png" alt="Crystal Ball" width="300">
+                <p><strong>Use your keyboard to guess which letter the computer is thinking of!  You only get 10 guesses, so use them wisely...</strong></p>
             </div>
-            <div class="col-md-8">
-                <p>
-                    <u >Letters Guessed:</u> 
+            <div class="col-4">
+                <h5><strong>Wins:</strong> <span id= "wins"></span></h5> 
+                <h5><strong>Losses:</strong> <span id= "losses"></span></h5>             
+                <h5><strong>Guesses Left:</strong> <span id= "guessesLeft"></span></h5>
+            </div>
+            <div class="col-4">
+                <h4>
+                    Letters Guessed:
+                    <hr>
                     <div id= "wrongGuesses"></div>
-                </p>
+                </h4>
             </div>
+           
 
         </div>
         <script src="assets/javascript/game.js"></script> 
