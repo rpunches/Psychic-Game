@@ -18,10 +18,10 @@ function startGame() {
     // Solution is chosen randomly from aryAlpha.
     var computerGuess = aryAlpha[Math.floor(Math.random() * aryAlpha.length)];
 
-    // CRITICAL LINE - Here we *reset* the wrong guesses from the previous round.
+    // Reset the wrong guesses 
     wrongGuesses = [];
 
-    // Reprints the guessesLeft to 10
+    // Resets the guessesLeft to 10
     document.getElementById("guessesLeft").innerHTML = numGuesses;
 
     // Clears the wrong guesses from the previous round
